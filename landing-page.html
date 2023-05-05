@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bata</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="modal modalpopup verifcationpop">
+		<div class="modalpopupinnr">
+			<div class="verifcationpopinnr">
+				<div class="popupbar">
+					<div class="left"></div>
+					<div class="right">
+						<span class="close">
+							<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4.01136 0.363636L8.71591 8.39205L13.4205 0.363636H16.8977L10.5568 10.1818L16.8977 20H13.4205L8.71591 12.3807L4.01136 20H0.534091L6.77273 10.1818L0.534091 0.363636H4.01136Z" fill="black"/>
+							</svg>
+						</span>
+					</div>
+				</div>
+				<div class="verifcationpopcntnt">
+					<div class="image">
+						<img src="img/imagever.png" alt="Image">
+					</div>
+					<div class="cntnt">
+						<h5>Verification <br>pending</h5>
+						<p>On successful verification, your design will be sent to your registered number.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal modalpopup generatedesignpop" style="display: block;">
+		<div class="modalpopupinnr">
+			<div class="generatedesigninnr">
+				<div class="popupbar">
+					<div class="left"><p><&nbsp;&nbsp;Generated Design</p></div>
+					<div class="right">
+						<span class="close">
+							<svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4.01136 0.363636L8.71591 8.39205L13.4205 0.363636H16.8977L10.5568 10.1818L16.8977 20H13.4205L8.71591 12.3807L4.01136 20H0.534091L6.77273 10.1818L0.534091 0.363636H4.01136Z" fill="black"/>
+							</svg>
+						</span>
+					</div>
+				</div>
+				<div class="generatedesigcntnt">
+					<div class="flex-box">
+						<div class="image active">
+							<img src="img/dummy.png">
+						</div>
+						<div class="image">
+							<img src="img/dummy.png">
+						</div>
+						<div class="image">
+							<img src="img/dummy.png">
+						</div>
+						<div class="image">
+							<img src="img/dummy.png">
+						</div>
+						<div class="image">
+							<img src="img/dummy.png">
+						</div>
+						<div class="image">
+							<img src="img/dummy.png">
+						</div>
+					</div>
+					<div class="resetverify flex-box">
+						<div class="col">
+							<a class="btn" id=""><img src="img/load.png"> Reset</a>
+							<p>Umm…wanna level up?</p>
+						</div>
+						<div class="col">
+							<a class="btn" id="verifyshoes">Verify</a>
+							<p>Like it?</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	  $(".generatedesigcntnt .image").click(function(){
+	    $(".generatedesigcntnt .image.active").removeClass("active");
+	    $(this).addClass("active");
+	  });
+	  $("#verifyshoes").click(function(){
+	    $(".verifcationpop").show();
+	    $(".generatedesignpop").hide();
+	  });
+	});
+</script>
+</body>
+</html>

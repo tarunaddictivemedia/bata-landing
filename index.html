@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bata</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<section class="useraction">
+		<div class="container">
+			<div class="useractioninnr">
+				<div class="logo">
+					<img src="img/logo.png">
+				</div>
+				<div class="cntnt">
+					<h1>Greetings, AI artist!</h1>
+					<p>Ready to put your thoughts on our sneakers? <br>Register now to start designing.</p>
+					<div class="formgroup">
+						<div class="formcontrol">
+							<div class="input"><input type="text" name="" placeholder="Name:"></div>
+							<div class="input"><input type="text" name="" Placeholder="Mobile No:"></div>
+							<div class="input"><input type="checkbox" name="" id="terms" class="checkbox">
+							<label for="terms">I agree to the terms and conditions</label></div>
+							<button type="submit" class="btn" id="userdetailsubmit">SUBMIT</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="enterotp modalpopup modal">
+		<div class="enterotpinnr modalpopupinnr">
+			<div class="otpsubmit">
+				<div class="load"><img src="img/load.png"></div>
+				<h6>Enter OTP</h6>
+				<p>sent to your registered phone number</p>
+				<form class="otpform">
+					<div class="otp">
+						<span><input type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" /></span>
+						<span><input type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" /></span>
+						<span><input type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" /></span>
+						<span><input type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" /></span>					
+					</div>
+				</form>
+				<button type="submit" class="btn" id="submitOTP">SUBMIT</button>
+			</div>
+		</div>
+	</div>
+	<div class="registrationsucessfull modalpopup modal">
+		<div class="registrationinnr modalpopupinnr">
+			<div class="registrationsucess">
+				<p>“Registration successful!”</p>
+			</div>
+		</div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	  $("#userdetailsubmit").click(function(){
+	    $(".enterotp").show();
+	  });
+	  $(".load").click(function(){
+	    $(".otpform")[0].reset();
+	  });
+	  $(".close").click(function(){
+	    $(".modal").hide();
+	  });
+	  $("#submitOTP").click(function(){
+	    $(".registrationsucessfull").show();
+	    $(".otpform").hide();
+	  });
+	});
+</script>
+</body>
+</html>

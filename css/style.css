@@ -1,0 +1,576 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+a
+a,
+a:hover,
+ins {
+    text-decoration: none
+}
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0
+}
+body {
+    line-height: 1;
+    font-family: 'Inter', sans-serif;
+}
+html {
+	font-size: 10px;
+}
+h1, h2, h3, h4,h5, h6 {
+	margin: 0;
+    font-family: 'Inter', sans-serif;    
+    color: #000;
+}
+input:focus {
+	outline: none;
+}
+li {
+	list-style: none;
+}
+h1 {
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 1.4;
+    text-align: center;
+}
+.textcenter {
+	text-align: center;
+}
+.container {
+	max-width: 80rem;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 2rem;
+}
+.useraction {
+    padding-top: 6.4rem;
+    background: #F5F5F5;
+    height: 100vh;
+}
+.useractioninnr .logo {
+    width: 25rem;
+    margin: 0 auto;
+}
+.useractioninnr .logo img {
+    width: 100%;
+}
+.useractioninnr .cntnt {
+    padding-top: 15.3rem;
+}
+.useraction {
+    padding-top: 6.4rem;
+    background: #F5F5F5;
+    height: 100vh;
+}
+.useractioninnr .logo {
+    width: 25rem;
+    margin: 0 auto;
+}
+.useractioninnr .logo img {
+    width: 100%;
+}
+.useractioninnr .cntnt {
+    padding-top: 15.3rem;
+}
+.useractioninnr .cntnt p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 1.4;
+    padding: 2rem 0;
+}
+.useractioninnr .cntnt .formgroup {
+    max-width: 65rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.useractioninnr .cntnt .formgroup .input input {
+    width: 100%;
+    padding: 2.6rem;
+    border-radius: 5rem;
+    border: none;
+    color: #000000;
+    font-size: 2.4rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+.btn {
+    margin-top: 5rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 1.4;
+    background: #F5F5F5;
+    border: 2px solid #000000;
+    border-radius: 40px;
+    color: #000;
+    width: 40rem;
+    height: 8rem;
+    cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.btn:hover {
+	background: #000;
+	color: #fff;
+}
+.useractioninnr .cntnt .formgroup .input {
+    text-align: left;
+    position: relative;
+}
+.useractioninnr .cntnt .formgroup .input label {
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    color: #000000;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.2;
+    padding-left: 4rem;
+}
+.useractioninnr .cntnt .formgroup .input .checkbox {
+    position: absolute;
+    left: 0;
+    top: -0.4rem;
+    width: 2rem;
+    height: 2rem;
+}
+.useractioninnr .cntnt .formgroup #userdetailsubmit {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/*Modal*/
+.modalpopup {
+    display: none;
+    background: rgba(217, 217, 217, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.modalpopupinnr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+/*OTP Modal*/
+.otpsubmit {
+    width: 80rem;
+    background: #fff;
+    text-align: center;
+    padding: 6rem;
+    border-radius: 2rem;
+}
+.otpsubmit h6 {
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    text-align: center;
+    color: #000000;
+}
+.otpsubmit p {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: #000;
+    padding-top: 1rem;
+}
+.otpsubmit .otp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+.otpsubmit .otp span {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 44px;
+    height: 16rem;
+    margin: 0 0.8rem;
+    width: 10rem;
+}
+.otpsubmit {
+    position: relative;
+}
+.otpsubmit .load {
+    position: absolute;
+    top: 2rem;
+    cursor: pointer;
+    right: 2rem;
+    width: 5rem;
+}
+.otpsubmit .otp span input {
+    width: 100%;
+    height: 100%;
+}
+.otpsubmit .otp span {
+    overflow: hidden;
+}
+.otpsubmit .load img {
+    width: 100%;
+}
+.otpsubmit .otp span input {
+    width: 100%;
+    height: 100%;
+    font-size: 6rem;
+    text-align: center;
+    border: none;
+}
+.otpsubmit .otp span input:focus {
+    outline: none;
+}
+/*Registration successful!*/
+.registrationsucess p {
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+.registrationsucess {
+    background: #000000;
+    border: 2px solid #000000;
+    border-radius: 4rem;
+    width: 80rem;
+    height: 34rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.verifcationpop, .generatedesignpop {
+    padding: 8rem 6rem;
+}
+.verifcationpopinnr, .generatedesigninnr {
+    height: 100%;
+    background: #fff;
+    border-radius: 2rem;
+    padding: 6rem;
+    width: 160rem;
+}
+.verifcationpopcntnt .image img {
+    height: 100%;
+}
+.popupbar .left {
+	width: 80%;
+}
+.popupbar .left p {
+	font-weight: 400;
+	font-size: 2.4rem;
+	line-height: 1.2;
+	color: #000000;
+}
+.verifcationpopcntnt .image {
+    height: 100%;
+}
+.generatedesigcntnt {
+    height: calc(100% - 8rem);
+}
+.generatedesigcntnt .flex-box{
+    width: 70%;
+    margin: 0 auto;
+}
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;	
+}
+.generatedesigcntnt .image {
+    width: calc(100% / 3);
+    padding: 10px;
+    cursor: pointer;
+}			
+.generatedesigcntnt .image img {
+    width: 100%;
+    height: 100%;
+}
+button#submitOTP {
+    background: #000;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+.popupbar {
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+.close {
+	cursor: pointer;
+}
+.close svg {
+    width: 2rem;
+}
+.verifcationpopcntnt {
+    height: calc(100% - 8rem);
+    display: flex;
+    align-items: center;
+}
+.verifcationpopcntnt .cntnt {
+    padding-left: 10rem;
+    width: 100%;
+}
+.verifcationpopcntnt .cntnt h5 {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+    color: #000000;
+}
+.verifcationpopcntnt .cntnt p {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    color: #000000;
+    padding-top: 2rem;
+}
+.resetverify p {
+	text-align: center;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.9rem;
+	padding-top: 2rem;
+	color: rgba(0, 0, 0, 0.51);
+}
+.generatedesigcntnt {
+    position: relative;
+}
+.generatedesigcntnt .resetverify {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 56rem !important;
+}
+.generatedesigcntnt .resetverify .col {
+    width: 50%;
+}
+.generatedesigcntnt .resetverify .col .btn img {
+    width: 4rem;
+    margin-right: 1rem;
+}
+.generatedesigcntnt .resetverify .col .btn svg {
+    width: 2rem;
+}
+.generatedesigcntnt .resetverify .col .btn {
+    width: 24rem;
+}
+.generatedesigcntnt .resetverify .col .btn:hover img {
+    filter: invert(1) brightness(2);
+}
+.generatedesigcntnt .image.active img {
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+/*Responsive */
+@media(max-width: 2560px) {
+	.generatedesigcntnt .flex-box {
+	    width: 40%;
+	    margin: 0 auto;
+	}
+}
+@media(max-width: 1920px) {
+	html {
+		font-size: 50%;
+	}
+	.generatedesigcntnt .flex-box {
+	    width: 40%;
+	    margin: 0 auto;
+	}
+}
+@media(max-width: 1680px) {
+	html {
+		font-size: 46%;
+	}
+	.generatedesigcntnt .resetverify .col .btn {
+	    width: 20rem;
+	    height: 7rem;
+	    margin: 0 auto;
+	    font-size: 2rem;
+	}
+	.generatedesigcntnt .resetverify .col .btn img {
+	    width: 3rem;
+	    margin-right: 1rem;
+	}
+	.generatedesigcntnt .resetverify .col {
+	    width: 40%;
+	}
+	.generatedesigcntnt .resetverify {
+	    width: 56rem !important;
+	    justify-content: flex-end;
+	}
+}
+@media(max-width: 1440px) {
+	html {
+		font-size: 40%;
+	}
+	.useractioninnr .cntnt {
+	    padding-top: 12rem;
+	}
+}
+@media(max-width: 768px) {
+.generatedesigcntnt .flex-box {
+    width: 46%;
+    margin: 0 auto;
+}
+}
+@media(max-width: 479px) {
+	.modalpopupinnr {
+	    padding: 20px;
+	}
+	.verifcationpopcntnt {
+	    align-items: flex-start;
+	}
+	.generatedesignpop .modalpopupinnr {
+	    padding: 0;
+	}
+	.verifcationpop, .generatedesignpop {
+	    padding: 6rem 4rem;
+	}
+	.verifcationpopinnr,  .generatedesigninnr {
+	    border-radius: 2rem;
+	    padding: 20px 25px;
+        height: auto;
+	}
+	.generatedesigcntnt .flex-box {
+	    width: 100%;
+	    margin: 0 auto;
+	}
+	.generatedesigcntnt .resetverify {
+		position: relative;
+		width: 100% !important;
+		padding-top: 20px;
+	}
+	.generatedesigcntnt {
+	    padding-top: 10px;
+	}
+	.generatedesigcntnt .resetverify .col {
+	    width: 45%;
+	    padding-left: 10px;
+	}
+	.generatedesigcntnt .resetverify .col .btn {
+		width: 100%;
+	}
+	.verifcationpop .modalpopupinnr {
+		padding: 0;
+	}
+	.verifcationpopcntnt .image img {
+	    width: 100%;
+	    height: 100%;
+	    object-fit: contain;
+	    object-position: top;
+	}
+	.verifcationpopcntnt .cntnt {
+	    padding-left: 16px;
+	    width: 100%;
+	}
+	.popupbar {
+	    height: 6rem;
+	}
+	.verifcationpopcntnt .cntnt p {
+	    font-weight: 500;
+	    font-size: 13px;
+	    line-height: 1.2;
+	    color: #000000;
+	    padding-top: 8px;
+	}
+	.verifcationpopcntnt .cntnt h5 {
+	    font-weight: 700;
+	    font-size: 17px;
+	    line-height: 1.2;
+	    color: #000000;
+	}
+	.verifcationpopcntnt .cntnt {
+	    padding-left: 12px;
+	    width: 100%;
+	}
+	.verifcationpopcntnt {
+	    align-items: flex-start;
+	}
+	.verifcationpopcntnt .image {
+	    height: 140px;
+	}
+}
